@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+        }
+        #corazon-container {
+            position: relative;
+            font-size: 90px;
+            color: darkred;
+            margin-top: 50px;
+        }
+        #corazon {
+            position: absolute;
+            top: 135px;
+            left: 35%;
+        }
+        #texto-editable {
+            border: none;
+            background: none;
+            font-size: 90px;
+            font-family: Arial, sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="corazon-container">
+        <svg id="corazon" width="400" height="400">
+            <path d="M200 350 C480 160,290 30,200 120 C160 30, -80 160, 200 350" fill="none" stroke="red" stroke-width="8" />
+        </svg>
+        <div contenteditable="true" id="texto-editable">Te Quiero<br> Mucho Marelyn </div>
+    </div>
+</body>
+</html>
